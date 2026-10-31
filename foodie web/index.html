@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#191817">
+  <meta name="description" content="Discover handcrafted flavours at Ember & Spice. Explore meals, recipes and culinary inspiration.">
+  <title>Ember & Spice | A Taste Beyond Ordinary</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-xl navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="#home" aria-label="Ember and Spice home">
+      <span class="brand-mark"><i class="bi bi-fire"></i></span>
+      <span>EMBER <em>&</em> SPICE<small>CRAFTED WITH PASSION</small></span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Our Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#story">Our Story</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-tools">
+        <button class="nav-icon" id="openWishlist" aria-label="Open wishlist"><i class="bi bi-heart"></i><span id="wishCount">0</span></button>
+        <button class="nav-icon" id="openCart" aria-label="Open shopping cart"><i class="bi bi-bag"></i><span id="cartCount">0</span></button>
+        <a href="#menu" class="btn btn-copper">Explore Menu <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6500">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=90')"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-container">
+          <div class="hero-copy">
+            <span class="eyebrow light-eyebrow"><i class="bi bi-stars"></i> AN EXTRAORDINARY FOOD EXPERIENCE</span>
+            <h1>Where Fire Meets<br><span>Fine Flavour.</span></h1>
+            <p>Discover bold flavours, beautiful ingredients and unforgettable culinary moments crafted for people who love good food.</p>
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-copper btn-lg">Discover Our Menu <i class="bi bi-arrow-right ms-2"></i></a>
+              <a href="#story" class="btn btn-outline-light btn-lg">Our Story</a>
+            </div>
+            <div class="hero-note"><span class="hero-line"></span> GOOD FOOD. BEAUTIFULLY MADE.</div>
+          </div>
+        </div>
+        <span class="slide-number">01 <span>/ 04</span></span>
+      </div>
+
+      <div class="carousel-item">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=2000&q=90')"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-container">
+          <div class="hero-copy">
+            <span class="eyebrow light-eyebrow">THE ART OF THE PERFECT MEAL</span>
+            <h1>Made to Savour.<br><span>Born to Impress.</span></h1>
+            <p>From delicious classics to exciting new discoveries, find something worth coming back for.</p>
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-copper btn-lg">Explore Dishes <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <span class="slide-number">02 <span>/ 04</span></span>
+      </div>
+
+      <div class="carousel-item">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=2000&q=90')"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-container">
+          <div class="hero-copy">
+            <span class="eyebrow light-eyebrow">FRESHNESS IN EVERY DETAIL</span>
+            <h1>A Feast for<br><span>All Your Senses.</span></h1>
+            <p>Colourful ingredients, thoughtful preparation and food inspiration from around the world.</p>
+            <div class="hero-actions">
+              <a href="#experience" class="btn btn-copper btn-lg">Our Experience <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <span class="slide-number">03 <span>/ 04</span></span>
+      </div>
+
+      <div class="carousel-item">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=2000&q=90')"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-container">
+          <div class="hero-copy">
+            <span class="eyebrow light-eyebrow">BRING EVERYONE TO THE TABLE</span>
+            <h1>Every Bite<br><span>Tells a Story.</span></h1>
+            <p>Find your next favourite recipe and make your everyday dining feel a little more special.</p>
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-copper btn-lg">Find Your Favourite <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <span class="slide-number">04 <span>/ 04</span></span>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</header>
+
+<section class="trust-strip">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-6 col-lg-3"><i class="bi bi-fire"></i><div><strong>Bold Flavours</strong><small>Inspired by the world</small></div></div>
+      <div class="col-6 col-lg-3"><i class="bi bi-flower1"></i><div><strong>Fresh Inspiration</strong><small>Beautiful ingredients</small></div></div>
+      <div class="col-6 col-lg-3"><i class="bi bi-heart"></i><div><strong>Made With Care</strong><small>Food brings us together</small></div></div>
+      <div class="col-6 col-lg-3"><i class="bi bi-stars"></i><div><strong>Explore Something New</strong><small>Recipes from everywhere</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="section-space menu-section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">THE FLAVOUR COLLECTION</span>
+        <h2>Explore Our <span>Menu.</span></h2>
+        <p>Discover dishes that inspire your next delicious moment.</p>
+      </div>
+      <div class="menu-count">
+        <span id="resultCount">Discovering...</span>
+        <small>FOOD & INSPIRATION</small>
+      </div>
+    </div>
+
+    <div id="categoryList" class="category-list">
+      <button class="category-chip active" data-category="all">All Dishes</button>
+    </div>
+
+    <div class="menu-toolbar">
+      <div class="search-wrap">
+        <i class="bi bi-search"></i>
+        <input id="mealSearch" type="search" placeholder="Search dishes, cuisines..." aria-label="Search dishes">
+      </div>
+      <select id="sortMeals" class="form-select sort-select" aria-label="Sort dishes">
+        <option value="default">Featured</option>
+        <option value="az">Name A–Z</option>
+        <option value="za">Name Z–A</option>
+      </select>
+    </div>
+
+    <div id="mealStatus" class="status" role="status">Preparing your menu...</div>
+    <div id="mealGrid" class="row g-4"></div>
+
+    <div class="text-center mt-5">
+      <button id="loadMore" class="btn btn-outline-copper d-none">Load More Dishes <i class="bi bi-arrow-down ms-2"></i></button>
+    </div>
+
+    <p class="api-note">Discover recipes from <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a>. Demonstration menu, not a live restaurant ordering service.</p>
+  </div>
+</section>
+
+<section id="experience" class="section-space experience-section">
+  <div class="container">
+    <div class="experience-panel">
+      <div class="experience-image">
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85"
+          alt="Beautiful restaurant interior"
+          class="hero-image img-fluid"
+          loading="lazy"
+        >
+      </div>
+      <div class="experience-copy">
+        <span class="eyebrow light-eyebrow">MORE THAN A MEAL</span>
+        <h2>Made for Moments<br>Worth <span>Remembering.</span></h2>
+        <p>Whether you're exploring new flavours or planning a meal with your favourite people, there's always something delicious to discover.</p>
+        <a href="#reservation" class="btn btn-copper">Plan Your Visit <i class="bi bi-arrow-up-right ms-2"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="section-space story-section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85" alt="Warm and elegant restaurant dining space" loading="lazy">
+          <span class="story-stamp"><i class="bi bi-fire"></i><small>THE ART OF</small><strong>GOOD FOOD</strong></span>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <span class="eyebrow">OUR PHILOSOPHY</span>
+        <h2 class="section-title">A Little Fire.<br>A Lot of <span>Passion.</span></h2>
+        <p class="body-copy">Ember & Spice is built around a simple idea: great food should feel exciting, welcoming and memorable. Our online kitchen brings together culinary inspiration and recipes from around the world.</p>
+
+        <div class="story-points">
+          <div><i class="bi bi-check2-circle"></i><span><strong>Curious by nature</strong><small>Discover flavours from different cuisines.</small></span></div>
+          <div><i class="bi bi-check2-circle"></i><span><strong>Inspired by ingredients</strong><small>Celebrate the details behind every dish.</small></span></div>
+          <div><i class="bi bi-check2-circle"></i><span><strong>Always worth sharing</strong><small>Find recipes for your next gathering.</small></span></div>
+        </div>
+
+        <a href="#menu" class="btn btn-dark-custom mt-4">Discover the Collection <i class="bi bi-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values-section section-space">
+  <div class="container">
+    <div class="text-center section-head-center">
+      <span class="eyebrow">THE EMBER & SPICE STANDARD</span>
+      <h2>Thoughtful in Every <span>Detail.</span></h2>
+      <p>Food inspiration designed around the things that matter.</p>
+    </div>
+
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <article class="value-card">
+          <span class="value-number">01</span>
+          <i class="bi bi-flower2"></i>
+          <h3>Fresh Inspiration</h3>
+          <p>Explore dishes and ingredients from a wide range of cuisines.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="value-card">
+          <span class="value-number">02</span>
+          <i class="bi bi-book-half"></i>
+          <h3>Recipes to Explore</h3>
+          <p>Discover ingredients and cooking instructions for your next kitchen adventure.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="value-card">
+          <span class="value-number">03</span>
+          <i class="bi bi-heart"></i>
+          <h3>Made for Sharing</h3>
+          <p>Save your favourites and build a personal collection of delicious ideas.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reservation" class="section-space reservation-section">
+  <div class="container">
+    <div class="reservation-panel">
+      <div class="reservation-intro">
+        <span class="eyebrow light-eyebrow">LET'S MAKE A PLAN</span>
+        <h2>Good Food.<br>Great Company.</h2>
+        <p>Try our reservation form demonstration. A real booking system is not connected.</p>
+        <div class="reservation-detail">
+          <i class="bi bi-calendar-heart"></i>
+          <span>Choose a date and time that works for you.</span>
+        </div>
+      </div>
+
+      <form id="reservationForm" class="reservation-form">
+        <h3>Reservation Enquiry</h3>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="resName" class="form-label">Full Name</label>
+            <input id="resName" class="form-control" required maxlength="80" placeholder="Your name">
+          </div>
+          <div class="col-sm-6">
+            <label for="resEmail" class="form-label">Email</label>
+            <input id="resEmail" class="form-control" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="col-sm-6">
+            <label for="resDate" class="form-label">Date</label>
+            <input id="resDate" class="form-control" type="date" required>
+          </div>
+          <div class="col-sm-6">
+            <label for="resTime" class="form-label">Time</label>
+            <input id="resTime" class="form-control" type="time" required>
+          </div>
+          <div class="col-12">
+            <label for="resGuests" class="form-label">Guests</label>
+            <select id="resGuests" class="form-select">
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5 Guests</option>
+              <option>6 Guests</option>
+              <option>7+ Guests</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-copper w-100">Submit Enquiry <i class="bi bi-arrow-right ms-2"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <span class="eyebrow">LET'S KEEP IN TOUCH</span>
+        <h2>Stay Close to the <span>Flavour.</span></h2>
+        <p>Questions about the website? Send us a message by email.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a href="mailto:hello@example.com" class="btn btn-dark-custom">Get in Touch <i class="bi bi-envelope ms-2"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-5 gx-lg-5 footer-main">
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-brand" href="#home">
+          <span class="brand-mark"><i class="bi bi-fire"></i></span>
+          <span>EMBER <em>&</em> SPICE<small>CRAFTED WITH PASSION</small></span>
+        </a>
+        <p class="footer-description">An appreciation of bold flavours, thoughtful details and the joy of discovering something delicious. Your next favourite meal starts here.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="mailto:hello@example.com" aria-label="Email us"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2 footer-links">
+        <h3>Explore</h3>
+        <a href="#home">Home</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#story">Our Story</a>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2 footer-links">
+        <h3>Discover</h3>
+        <a href="#menu">Browse Recipes</a>
+        <a href="#reservation">Reservation Demo</a>
+        <a href="#contact">Contact Us</a>
+        <button type="button" id="footerWishlist">My Wishlist</button>
+        <button type="button" id="footerCart">My Cart</button>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <h3 class="footer-heading">A Taste of Inspiration</h3>
+        <p class="footer-description">Subscribe to try our newsletter form demo. No email is sent or stored on a server.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <label class="visually-hidden" for="newsletterEmail">Your email</label>
+          <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+          <button type="submit" aria-label="Submit newsletter"><i class="bi bi-arrow-right"></i></button>
+        </form>
+        <small class="footer-api">Recipe data: <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a></small>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear"></span> Ember & Spice. All rights reserved.</p>
+      <div><a href="#home">Back to top ↑</a><span class="footer-divider">·</span><span>Crafted for food lovers.</span></div>
+    </div>
+  </div>
+</footer>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartPanel" aria-labelledby="cartHeading">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="cartHeading">Your Cart</h2>
+    <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="cartItems"></div>
+    <hr>
+    <div class="d-flex justify-content-between fw-bold">
+      <span>Sample Total</span>
+      <span id="cartTotal">Rs. 0</span>
+    </div>
+    <p class="small text-muted mt-2">Illustrative sample prices only. This demo does not place orders or accept payments.</p>
+    <button id="checkoutBtn" class="btn btn-copper w-100 mt-3">Demo Checkout</button>
+    <button id="clearCart" class="btn btn-outline-secondary w-100 mt-2">Clear Cart</button>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="wishlistPanel" aria-labelledby="wishlistHeading">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="wishlistHeading">Saved Favourites</h2>
+    <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="wishlistItems"></div>
+  </div>
+</div>
+
+<div class="modal fade" id="recipeModal" tabindex="-1" aria-labelledby="recipeHeading" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="recipeHeading" class="modal-title fs-5">Recipe Details</h2>
+        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="recipeContent" class="modal-body"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="appToast" class="toast" role="status" aria-live="polite">
+    <div class="toast-body d-flex justify-content-between align-items-center">
+      <span id="toastText"></span>
+      <button class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<button id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
